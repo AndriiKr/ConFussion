@@ -1,0 +1,46 @@
+#!/usr/bin/env babel-node
+var debug = require('debug')('wparse:server');
+var app = require('../app');		
+var http = require('http');
+var portNumber = 3001;
+var port = normalizePort(process.env.PORT || portNumber);
+app.set('port', port);
+var server = http.createServer(app);
+
+server.listen(port);
+server.on('error',onerror);
+server.on('listening',onListening);
+
+
+
+function normalizePort(val) {
+	var port = parseInt(val, 10);
+
+	if (isNaN(port)) return val;
+	if (port>=0) return port;
+	return false;
+}
+function onerror (error){
+	if(error) console.trace (error);
+	if (error.syscall !== 'listen') throw error;
+	switch (error.code){
+		case 'EACCES':
+			console.error ('Server access diened');
+			process.exit(1);
+		break;
+		case 'EADDRINUSE':
+			console.error ('Port already in use');
+			process.exit(1);
+		break;
+		default: 
+		throw error;
+	}
+
+}
+
+function onListening () {
+	var addr = server.address ();
+	debug ('Listening on' +addr);
+}
+
+console.log (`Please use http://127.0.0.1:${portNumber}/home`)

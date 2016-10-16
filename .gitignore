@@ -1,0 +1,8 @@
+node_modules
+logs
+backup
+dump
+*.log
+.grunt
+.npm
+npm-debug log*
