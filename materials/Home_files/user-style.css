@@ -1,0 +1,23 @@
+/*Muse elements transitions*/
+
+/*User elements transitions*/
+.transition {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+
+/*Rooms*/
+.Desc-Room, .Price-Room, .Per-Room {
+    transform: translateY(-20px);
+}
+.Price-Room {
+    transition-delay: 0.1s !important;
+}
+.Per-Room {
+    transition-delay: 0.2s !important;
+}
+.Room:hover .Desc-Room, .Room:hover .Price-Room, .Room:hover .Per-Room {
+    transform: translateY(0);
+}

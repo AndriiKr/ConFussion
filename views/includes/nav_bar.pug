@@ -1,0 +1,43 @@
+block navbar
+	body
+		.wrapper
+			header#header
+				nav.navbar.navbar-static-top(role='navigation')
+					.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle="collapse",data-target="#navbar", aria-expanded='false', aria-controls='navbar')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+					#navbar.navbar-collapse.nav-collapse.collapse
+						ul.nav.navbar-nav.navbar-left
+							li.active
+								a(href='#') HOME
+							li
+								a(href='#about') ABOUT US
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									| ROOMS 
+								ul.dropdown-menu
+									li
+										a(href='#room_details') ROOM DETAILS
+									li
+										a(href='#rooms2') ROOMS 2
+									li
+										a(href='#payment') PAYMENT
+							li
+								a(href="#conf_room") CONFERENCE ROOM    
+			
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='#wed_hall') WEDDING HALL
+							li
+								a(href='#restaurant') RESTAURANT
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') BLOG
+								ul.dropdown-menu
+									li: a(href="#single_blog") BLOG SINGLE
+							li
+								a(href="#contact") CONTACT
+					a.brand(href='#')
+						img(src="img/logo.png", height=130, width=220)

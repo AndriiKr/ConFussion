@@ -2,7 +2,7 @@ import express from 'express';
 
 var router = express.Router();
 
-router.get('/', function(req, res){
+router.get('/home', function(req, res){
     res.render('index',{
             title: 'My site'
         });

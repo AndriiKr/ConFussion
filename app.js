@@ -1,4 +1,5 @@
 import express from 'express';
+import sass from 'node-sass-middleware';
 import path from 'path';
 import favicon from 'serve-favicon';
 import logger from 'morgan';
@@ -9,6 +10,13 @@ import pug from 'pug';
 import cookieSession from 'cookie-session';
 
 var app = express();
+app.use(sass({
+	src:__dirname+'/views/SCSS/',
+	dest:path.join(__dirname, '/static/css'),
+	debug:false,
+	outputStyle:'extended',
+	prefix:  '/css'
+}));
 app.set ('/views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use (logger('dev'));
