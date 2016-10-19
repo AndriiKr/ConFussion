@@ -47,10 +47,91 @@ block content
 							h2.header1 ONLINE RESERVATION
 							p.ipsum1.center-block Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					.row.no-gutters(style="padding-bottom:150px;")
-						.col-xs-12.col-sm-6
+						.col-xs-12.col-md-6
 							#img_deluxe
-						.col-xs-12.col-sm-6
+						.col-xs-12.col-md-6
 							#deluxe_aria
+								#text_aria
+									p(style="margin-bottom: 29px;font-size: 22px;line-height: 26px;") OUR ROOM - DELUXE DOUBLE
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									.row#lists
+										ul.col-xs-6
+											li LCD TVs 28 ''
+											li national and international TV channels
+											li direct dial telephone, Internet access
+											li premium cosmetics
+										ul.col-xs-6
+											li fluffy cotton bathrobes
+											li towels and cotton sheets
+											li comfortable slippers
+											li hairdryer
+									.row.no-gutters(style="padding-bottom:20px;")
+											.col-xs-2
+												#img_house.center-block
+												p#ipsum2.center-block NEAR DOWNTOWN
+											.col-xs-2
+												#img_wifi.center-block
+												p#ipsum2.center-block FREE WIFI
+											.col-xs-2
+												#img_parking.center-block
+												p#ipsum2.center-block FREE PARKING
+											.col-xs-2
+												#img_breackfast.center-block
+												p#ipsum2.center-block FREE BREACKFAST
+											.col-xs-2
+												#img_room.center-block
+												p#ipsum2.center-block 23MP
+									a.btn#bookButton(type="button")
+										| BOOK NOW
+					.row(style="padding-bottom:150px;")
+						.col-xs-12.col-sm-6
+							h1#center_header2 OUR RESTAURANT
+							p#center_text2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+							a.btn#bookButton.center-block(type="button")
+								| BOOK NOW
+						.col-xs-12.col-sm-6
+							#img_restaurant
+				.container-fluid
+					.row#circle_count(style="background-color:#353535")
+						.col-xs-6.col-md-3
+							.circle.center-block
+								p.count_up#count1 0
+							p Customers
+						.col-xs-6.col-md-3
+							.circle.center-block
+								p.count_up#count2 0
+							p Returns
+						.col-xs-6.col-md-3
+							.circle.center-block
+								p.count_up#count3 0
+							p Celebrities
+						.col-xs-6.col-md-3
+							.circle.center-block
+								p.count_up#count4 0
+							p Happy people
+					.row(style="padding-top:50px;")
+						.col-xs-12
+							h1#center_header2 OUR NEWS
+					.row(style="padding-bottom:150px;")
+						.col-xs-12.col-md-7
+							#photo_chairs
+						.col-xs-12.col-md-5
+							.carousel.slide#mycarousel2(data-ride="carousel")
+								.carousel-inner(role="listbox")
+									.item.active
+										.carousel-caption
+											h1.item1 PRESIDENTIAL SUITE
+											p.item2 FAMILY VACATION
+									.item
+										.carousel-caption
+											h1.item1 WEDDING ROOM
+											p.item2 FAMILY VACATION
+									.item
+										.carousel-caption
+											h1.item1 CONFERENCE ROOM
+											p.item2 FAMILY VACATION
+
+
 								
 block script
 	script(type="text/javascript", src='/js/carousel.js')

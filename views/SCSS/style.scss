@@ -154,6 +154,7 @@ $carousel-height: 880px;
   height: 644px;
   background-color: #353535;
   width: 100%;
+  color: white;
 }
 
 .row.no-gutters {
@@ -165,4 +166,138 @@ $carousel-height: 880px;
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+#text_aria {
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  color: #F9F6F1;
+  position: relative;
+  line-height: 24px;
+  width: 100%;
+}
+
+#lists{
+  padding-left: 15px;
+}
+#img_house {
+  width: 60px;
+  height: 75px;
+  background: transparent url(../img/town.png) no-repeat center center;
+
+}
+
+#img_wifi {
+  width: 60px;
+  height: 75px;
+  background: transparent url(../img/wi-fi.png) no-repeat center center;
+}
+#img_parking {
+  width: 60px;
+  height: 75px;
+  background: transparent url(../img/parking.png) no-repeat center center;
+}
+#img_breackfast {
+  width: 60px;
+  height: 75px;
+  background: transparent url(../img/tea.png) no-repeat center center;
+}
+#img_room {
+  width: 60px;
+  height: 75px;
+  background: transparent url(../img/room-size.png) no-repeat center center;
+}
+#ipsum2{
+  font-size:12px;
+  text-align: center;
+  line-height: 14px;
+}
+
+ #bookButton {
+    padding: 10px 12px;
+    border: 1px solid #c2a476;;
+    border-radius: 5px;
+    font-family: open-sans, sans-serif;
+    font-size: 15px;
+     width: 137px;
+     background-color: transparent;
+     color: #c2a476;
+}
+#bookButton:hover{
+  background-color: #c2a476;
+  color: white;
+}
+
+#img_restaurant {
+  background: transparent url(../img/image-02.jpg) no-repeat left top;
+    background-size: cover;
+    height: 490px;
+    width: 100%;
+}
+
+#center_header2 {
+  margin-bottom: 40px;
+  text-align: center;
+  min-height: 77px;
+  position: relative;
+  text-align: center;
+  font-family: lora, serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  background: url(../img/bg-1.png) no-repeat center bottom;
+}
+
+#center_text2 {
+    font-weight: 400;
+    color: #7E7E7E;
+    font-style: italic;
+    font-family: lora, serif;
+    font-size: 16px;
+    margin-right: 10px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+.circle {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    border-style: solid;
+    padding-bottom: 0px;
+    border-color: #424242;
+    border-width: 0px 1px;
+    background: transparent url(../img/bg-odometer.png) no-repeat center top;
+}
+
+#circle_count {
+  padding-top:100px;
+  padding-bottom: 100px;
+  color: #F9F6F1;
+    font-family: lora, serif;
+    position: relative;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.count_up {
+  padding-top: 50px;
+  font-size: 36px;
+}
+
+#photo_chairs{
+  height: 664px;
+    background: transparent url(../img/image-01.jpg) no-repeat left top;
+    background-size: cover;
+}
+
+#mycarousel2 {
+  height: 440px;
+  background-color: #353535;
 }
