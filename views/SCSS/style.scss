@@ -1,42 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-  background-color: #F9F6F1;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
-
-body {
-  height: 100%;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    text-align: left;
-    font-size: 14px;
-    line-height: 17px;
-    word-wrap: break-word;
-}
-
-.wrapper {
-  min-width: 100px;
-  max-width: 2000px;
-  margin: 0 auto;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-/* Header
------------------------------------------------------------------------------*/
-
+@import 'partials/general'; 
 @import 'partials/nav_bar'; 
-
+@import 'partials/footer';
 // Height variables
 $carousel-height: 880px;
-
+//Jumbotron+Carousel
 .jumbotron {
   padding: 0;
   margin: 0;
@@ -100,26 +67,10 @@ $carousel-height: 880px;
   }
 
   #reserveButton {
-    display: inline-block;
     padding: 10px 12px;
-    margin-bottom: 0;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
     border: 1px solid #c2a476;;
     border-radius: 4px;
     font-family: open-sans, sans-serif;
-    letter-spacing: 1px;
-    font-weight: 400;
     font-size: 15px;
      width: 166px;
      background-color: #c2a476;
@@ -130,7 +81,7 @@ $carousel-height: 880px;
   color: white;
 }
 
-.center_text {
+#center_text {
   text-align: center;
   margin-top: 118px;
   min-height: 77px;
@@ -140,7 +91,8 @@ $carousel-height: 880px;
   font-weight: 400;
   font-size: 36px;
   line-height: 43px;
-  background: transparent url(../img/bg-1.png) no-repeat center bottom;
+  background: url(../img/bg-1.png) no-repeat center bottom;
+  
 }
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -149,57 +101,68 @@ $carousel-height: 880px;
   padding: 0 0 100px;
 }
 
-/* Footer
------------------------------------------------------------------------------*/
-
-.footer {
-  margin: -100px auto 0;
-  min-width: 100px;
-  max-width: 2000px;
-  height: 100px;
-  background: #BFF08E;
-  position: relative;
+#img_cup {
+    width: 180px;
+    height: 112px;
+    background: transparent url(../img/cup.png) no-repeat center center;
+}
+#img_star {
+    width: 180px;
+    height: 112px;
+    background: transparent url(../img/star.png) no-repeat center center;
+}
+#img_mouse {
+    width: 180px;
+    height: 112px;
+    background: transparent url(../img/mouse.png) no-repeat center center;
 }
 
-.nav_footer {
-  background-color: #353535;
-  min-height: 100px;
-}
-
-#navbar_footer > ul > li > a {
-    background-color: transparent;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    font-family: lora, serif;
+.ipsum1{
+    padding-left: 42px;
+    padding-right: 42px;
     font-weight: 400;
-    border-width: 0px;
-    font-style: normal;
-}
-.brand_footer {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-#rights {
-    color: #FFFFFF;
-    position: relative;
+    color: #7E7E7E;
+    font-style: italic;
     font-family: lora, serif;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
+    border-style: solid;
     background-color: transparent;
+    border-color: #C2A476;
+    border-width: 0px 1px;
+    max-width: 330px;
 }
 
-#bottom {
-  min-height: 38px;
-  padding-bottom: 2px;
-  padding-top: 12px;
+.header1 {
+  font-weight: 400;
+    text-align: center;
+    font-family: lora, serif;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
-.social_btn {
-  padding: 2px 2px !important;
+#img_deluxe {
+  background: transparent url(../img/image-03.jpg) no-repeat left top;
+    background-size: cover;
+    height: 644px;
+    width: 100%;
+}
+
+#deluxe_aria {
+  background-size: cover;
+  height: 644px;
+  background-color: #353535;
+  width: 100%;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

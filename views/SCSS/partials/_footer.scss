@@ -1,0 +1,88 @@
+.footer {
+  margin: -100px auto 0;
+  min-width: 100px;
+  max-width: 2000px;
+  height: 100px;
+  background: #BFF08E;
+  position: relative;
+}
+
+.nav_footer {
+  background-color: #353535;
+  min-height: 100px;
+}
+
+#navbar_footer > ul > li > a {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: lora, serif;
+    font-weight: 400;
+    border-width: 0px;
+    font-style: normal;
+    position: relative;
+  z-index: 150;
+}
+
+#navbar_footer > ul > li > a:hover{
+  color:#C2A476;
+
+}
+.brand_footer {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+#rights {
+    color: #FFFFFF;
+    position: relative;
+    font-family: lora, serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: transparent;
+}
+
+#bottom {
+  min-height: 38px;
+  padding-bottom: 2px;
+  padding-top: 12px;
+}
+
+.social_btn {
+  padding: 2px 2px !important;
+}
+
+.fa-stack-half {
+  color:white;
+}
+.fa-stack-half:hover {
+color: #353535;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+.container {
+    width:auto;
+}
+}
+
+@media  (min-width: 990px) {
+  #navbar_footer > ul.nav.navbar-nav.navbar-left{
+    margin-top: 25px;
+  }
+  #navbar_footer > ul.nav.navbar-nav.navbar-right{
+    margin-top: 25px;
+  }
+}
+@media (max-width: 768px) {
+#navbar_footer > ul.nav.navbar-nav.navbar-left{
+  margin-top: 100px;
+}
+}
+.navbar {
+    border-radius:0;
+}
