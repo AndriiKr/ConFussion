@@ -78,7 +78,7 @@ body {
   z-index: 15; }
 
 .nav > li > a {
-  padding: 10px 9px; }
+  padding: 10px 8px; }
 
 @media (max-width: 768px) {
   .nav-collapse {

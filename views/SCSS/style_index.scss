@@ -297,7 +297,92 @@ $carousel-height: 880px;
     background-size: cover;
 }
 
+// mini carousel
 #mycarousel2 {
-  height: 440px;
+  top:172px;
+  right: 130px;
+  max-height: 492px;
+  min-width: 450px;
   background-color: #353535;
+}
+
+@media (max-width: 990px) {
+  #mycarousel2 {
+  top:0;
+  right:0;
+  max-height: 430px;
+  background-color: #353535;
+}
+}
+
+.carousel-body {
+  position: absolute;
+  top:30px;
+  left:30px;
+  right:30px;
+
+}
+
+.carousel-inner {
+    position: relative;
+    min-height: 492px;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel_header {
+font-weight: 600;
+    color: #C2A476;
+    font-family: lora, serif;
+    font-size: 30px;
+    position: relative;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.carousel_text {
+    font-weight: 400;
+    margin-top: 18px;
+    background-color: transparent;
+    font-family: open-sans, sans-serif;
+    font-size: 16px;
+    position: relative;
+    line-height: 24px;
+    color: #F9F6F1;
+}
+
+#indicators_castom {
+  position: absolute;
+  bottom: 35px;
+  left:70px;
+}
+
+.carousel-indicators li {
+    margin: 1px 7px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #C2A476;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 1px 7px;
+    background-color: #C2A476;
+}
+
+.map_frame {
+   border-width: 0px;
+    height: 481px;
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    left: 0px;
+    right: 0px;
 }
