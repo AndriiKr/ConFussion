@@ -1,0 +1,55 @@
+#img_contact {
+  width: 30px;
+  height: 38px;
+  background: transparent url(../img/icon-contact.png) no-repeat center top; }
+
+#img_phone {
+  margin-top: 18px;
+  width: 30px;
+  height: 38px;
+  background: transparent url(../img/icon-phone.png) no-repeat center top; }
+
+#img_email {
+  width: 30px;
+  height: 38px;
+  background: transparent url(../img/icon-email.png) no-repeat center top; }
+
+.drink_contac {
+  font-weight: 400;
+  color: #7E7E7E;
+  font-family: lora, serif;
+  line-height: 20px;
+  font-style: italic;
+  font-size: 14px; }
+
+.dring_header {
+  margin-bottom: 2px; }
+
+.lorem_cofee {
+  color: #7E7E7E;
+  font-family: open-sans, sans-serif;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0; }
+
+.form-input {
+  width: 100%;
+  display: block;
+  color: #7E7E7E;
+  min-height: 39px;
+  position: relative;
+  border-width: 1px;
+  border-radius: 4px;
+  font-family: open-sans, sans-serif;
+  margin-right: -10000px;
+  border-style: solid;
+  font-weight: 400;
+  line-height: 35px;
+  background-color: transparent;
+  font-size: 16px;
+  border-color: #D9D9D9;
+  padding: 0px 10px; }

@@ -13,7 +13,7 @@ var app = express();
 app.use(sass({
 	src:__dirname+'/views/SCSS/',
 	dest:path.join(__dirname, '/static/css'),
-	debug:false,
+	debug:true,
 	outputStyle:'extended',
 	prefix:  '/css'
 }));

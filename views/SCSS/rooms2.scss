@@ -1,0 +1,97 @@
+.select-header {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: lora, serif;
+  font-size: 20px;
+  line-height: 24px;
+	background-color: #c2a476;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+	min-height: 57px;
+	padding-top: 17px;
+	position: relative;
+}
+
+.list-of {
+	background-color:#353535;
+	border-width: 0px;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0;
+    padding: 0;
+    color:white;
+    padding: 20px 30px;
+    margin-bottom: 1000px;
+}
+
+@media (max-width: 995px){
+	.list-of {
+		margin: 0;
+		margin-bottom: 50px;
+	}
+} 
+a {
+	color: white;
+}
+
+
+.list-item, .list-item>a:hover, .list-item>a:focus {
+	padding: 20px 0px;
+	color:#c2a476;
+	text-decoration:none;
+}
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+
+.list-item :before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 10px;
+    color: #c2a476; /* Or a color you prefer */
+}
+
+.single-room {
+	text-align: center;
+	color: #c2a476;
+	height: 330px;
+	background: transparent url(../img/image-001.jpg) no-repeat center top; 
+	margin-bottom: 25px;
+	cursor: pointer;
+	 background-size: cover;
+}
+
+.sigle-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: lora, serif;
+    font-weight: 400;
+  background: #353535;
+  padding: 15px 0px;
+  margin:0;
+}
+
+.animation {
+	height: 330px;
+		padding: 15px 10px;
+		margin-bottom: 50px;
+}
+.animation:hover, .animation:focus {
+	height: 283px;
+	text-align: center;
+	display:  inline-block;
+	opacity: 0.8;
+	background: #353535 url(../img/bg-1.png) no-repeat center bottom; 
+	padding-bottom: 10px;
+
+}
+
+
+.animation_text {
+
+}

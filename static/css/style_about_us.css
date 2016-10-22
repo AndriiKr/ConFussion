@@ -18,3 +18,104 @@
   background: transparent url(../img/image-05.jpg) no-repeat left top;
   background-size: cover;
   height: 565px; }
+
+#circle_staff {
+  margin-bottom: 80px;
+  margin-top: 40px;
+  color: #F9F6F1;
+  background-color: #f9f6f1;
+  font-family: lora, serif;
+  position: relative;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center; }
+
+#center_circle {
+  margin: 0;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  font-family: lora, serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  background: url(../img/bg-2.png) no-repeat center bottom; }
+
+#circle_inside {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C2A476;
+  border-radius: 142px;
+  padding-bottom: 14px;
+  position: relative;
+  width: 286px;
+  height: 286px;
+  background: transparent url(../img/thumb-01.jpg) no-repeat left top; }
+
+#circle_inside2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C2A476;
+  border-radius: 142px;
+  padding-bottom: 14px;
+  position: relative;
+  width: 286px;
+  height: 286px;
+  background: transparent url(../img/thumb-02.jpg) no-repeat left top; }
+
+#circle_inside3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C2A476;
+  border-radius: 142px;
+  padding-bottom: 14px;
+  position: relative;
+  width: 286px;
+  height: 286px;
+  background: transparent url(../img/thumb-03.jpg) no-repeat left top; }
+
+.inside_img {
+  padding-right: 60px;
+  padding-left: 35px;
+  padding-top: 70px;
+  opacity: 0.8;
+  background-color: #353535;
+  height: 565px;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: lora, serif;
+  margin-right: 1px; }
+
+.inside_text {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: 400;
+  color: #7E7E7E;
+  font-family: open-sans, sans-serif;
+  font-size: 15px; }
+
+#img_map {
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background: transparent url(../img/icon-map.png) no-repeat center center; }
+
+#img_weather {
+  margin-top: 190px;
+  width: 50px;
+  height: 50px;
+  background: transparent url(../img/icon-weather.png) no-repeat center center; }
+
+#img_lounge {
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background: transparent url(../img/icon-lounge.png) no-repeat center center; }
+
+#img_playground {
+  margin-top: 190px;
+  width: 50px;
+  height: 50px;
+  background: transparent url(../img/icon-playground.png) no-repeat center center; }
