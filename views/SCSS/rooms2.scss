@@ -76,22 +76,48 @@ ul {
   margin:0;
 }
 
+//animation
+
 .animation {
-	height: 330px;
-		padding: 15px 10px;
+		height: 330px;
 		margin-bottom: 50px;
+		color: transparent;
 }
-.animation:hover, .animation:focus {
+.animation:hover .display-block{
 	height: 283px;
 	text-align: center;
-	display:  inline-block;
+	display:  block;
+}
+.display-block {
+	display: none;
 	opacity: 0.8;
-	background: #353535 url(../img/bg-1.png) no-repeat center bottom; 
-	padding-bottom: 10px;
-
+	background: #353535; 
+.price-235 {
+	margin-top: 50px;
+	color: #C2A476;
+    font-size: 24px;
+    text-align: center;
+    font-family: lora, serif;
+    font-weight: 400;
 }
 
-
+.per-night {
+	margin-bottom: 35px;
+	color: #FFFFFF;
+  font-family: lora, serif;
+ }
 .animation_text {
+    line-height: 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+}
+
+.img_display {
+}
 
 }
+
+

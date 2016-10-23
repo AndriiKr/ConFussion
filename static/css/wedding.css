@@ -1,0 +1,21 @@
+#img_jumbo {
+  height: 360px;
+  background: transparent url(../img/banner3.jpg) no-repeat center top;
+  background-size: cover; }
+
+#img_big4 {
+  position: relative;
+  background: transparent url(../img/image-16.jpg) no-repeat left top;
+  background-size: cover; }
+
+.circle_inside5 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C2A476;
+  border-radius: 142px;
+  padding-bottom: 14px;
+  position: relative;
+  width: 286px;
+  height: 286px;
+  background: transparent url(../img/wedding-hall.jpg) no-repeat left top;
+  background-size: cover; }

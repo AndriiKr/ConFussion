@@ -1,154 +1,101 @@
 extends ./includes/template
 block style
 	link(href='/css/style_index.css', rel='stylesheet')
+	link(href='/css/style_about_us.css', rel='stylesheet')
+	link(href='/css/conf_room.css', rel='stylesheet')
+
 block content
+				// Jumbotron
 				.jumbotron
-					//Carousel
-					.carousel.slide#mycarousel(data-ride="carousel")
-						.carousel-inner(role="listbox")
-							.item.active
-								img.img-responsive(src="/img/slide_1.jpg", alt="slide_1")
-								.carousel-caption
-									p.item1 RESERVE A ROOM FOR
-									p.item2 FAMILY VACATION
-							.item
-								img.media-object(src="img/slide_5.jpg", alt="slide_5")
-								.carousel-caption
-									p.item1 RESERVE A ROOM FOR
-									p.item2 FAMILY VACATION
-							.item
-								img.media-object(src="img/slide_3.jpg", alt="slide_3")
-								.carousel-caption
-									p.item1 RESERVE A ROOM FOR
-									p.item2 FAMILY VACATION
 					.container-fluid
-						.row.reserveRow
+						.row
+							#img_jumbo
+						.row.reserveJumbo
 							.col-xs-7.col-md-offset-1.col-md-8
-								p.reserveText Reserve a room for Conference - Lorem ipsum dolor sit amet
-							.col-xs-2.col-md-2(style="margin-left:40px;")
+								ul.breadcrumb.reserveText 
+									li: a(href='/home') HOME
+									li.active 
+										| CONFERENCE ROOM
+							.col-xs-2.col-md-2(style="margin-left:40px;padding-bottom:150px;")
 								a.btn.btn-block#reserveButton(type="button")
 									| RESERVE NOW
-						.row(style="padding-bottom:10px;background-color: #F9F6F1;")
-							.col-xs-12
-								p#center_text A FEW WORDS
 				main.content
 					.container
 						.row(style="padding-bottom:150px;")
 							.col-xs-12.col-sm-12.col-md-4
-								#img_cup.center-block
-								h2.header1.center-block LUXURY
+								#img_projector.center-block
+								h2.header1.center-block PROJECTOR
 								p.ipsum1.center-block Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							.col-xs-12.col-sm-6.col-md-4
-								#img_star.center-block
-								h2.header1 GREAT SERVICES
+								#img_people.center-block
+								h2.header1 UP TO 400 PEOPLE
 								p.ipsum1.center-block Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							.col-xs-12.col-sm-6.col-md-4
-								#img_mouse.center-block
-								h2.header1 ONLINE RESERVATION
+								#img_breakfast.center-block
+								h2.header1 FREE BREAKFAST
 								p.ipsum1.center-block Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						// big picture
 						.row.no-gutters(style="padding-bottom:150px;")
-							.col-xs-12.col-md-6
-								#img_deluxe
-							.col-xs-12.col-md-6
-								#deluxe_aria
-									#text_aria
-										p(style="margin-bottom: 29px;font-size: 22px;line-height: 26px;") OUR ROOM - DELUXE DOUBLE
-										p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-										.row#lists
-											ul.col-xs-6
-												li LCD TVs 28 ''
-												li national and international TV channels
-												li direct dial telephone, Internet access
-												li premium cosmetics
-											ul.col-xs-6
-												li fluffy cotton bathrobes
-												li towels and cotton sheets
-												li comfortable slippers
-												li hairdryer
-										.row.no-gutters(style="padding-bottom:20px;")
-												.col-xs-2
-													#img_house.center-block
-													p#ipsum2.center-block NEAR DOWNTOWN
-												.col-xs-2
-													#img_wifi.center-block
-													p#ipsum2.center-block FREE WIFI
-												.col-xs-2
-													#img_parking.center-block
-													p#ipsum2.center-block FREE PARKING
-												.col-xs-2
-													#img_breackfast.center-block
-													p#ipsum2.center-block FREE BREACKFAST
-												.col-xs-2
-													#img_room.center-block
-													p#ipsum2.center-block 23MP
-										a.btn#bookButton(type="button")
-											| BOOK NOW
-						.row(style="padding-bottom:150px;")
-							.col-xs-12.col-sm-6
-								h1#center_header2 OUR RESTAURANT
-								p#center_text2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-								a.btn#bookButton.center-block(type="button")
-									| BOOK NOW
-							.col-xs-12.col-sm-6
-								#img_restaurant
+							.col-xs-12
+								#img_big2
+									.row.no-gutters
+										.col-xs-12.col-sm-push-6.col-sm-6
+											.inside_img
+												.row.no-gutters
+													.col-xs-2
+														#img_meeting
+														#img_modern-hall
+													.col-xs-10
+														h3 CREATE YOUR MEETING
+														p.inside_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														h3 MODERN HALL
+														p.inside_text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								#img_big3
+									.row.no-gutters
+										.col-xs-12.col-sm-6
+											.inside_img
+												.row.no-gutter
+													.col-xs-2
+														#img_speakers
+														#img_map2
+													.col-xs-10
+														h3 GREAT SPEAKERS
+														p.inside_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														h3 NEAR DOWNTOWN
+														p.inside_text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.row
+							.col-xs-12
+								h1#center_header2 CONFERENCE ROOMS
+								p#text-great Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							// team circles
+						.row#circle_staff
+							.col-xs-12.col-sm-12.col-md-4
+								.circle_inside4.center-block
+								h1#center_circle
+							.col-xs-12.col-sm-6.col-md-4
+								.circle_inside4.center-block
+								h1#center_circle 
+							.col-xs-12.col-sm-6.col-md-4
+								.circle_inside4.center-block
+								h1#center_circle 
 					.container-fluid
 						.row#circle_count(style="background-color:#353535")
 							.col-xs-6.col-md-3
 								.circle.center-block
 									p.count_up#count1 0
-								p Customers
+								p International speakers
 							.col-xs-6.col-md-3
 								.circle.center-block
 									p.count_up#count2 0
-								p Returns
+								p New speakers
 							.col-xs-6.col-md-3
 								.circle.center-block
 									p.count_up#count3 0
-								p Celebrities
+								p Returns
 							.col-xs-6.col-md-3
 								.circle.center-block
 									p.count_up#count4 0
-								p Happy people
-						.row(style="padding-top:50px;")
-							.col-xs-12
-								h1#center_header2 OUR NEWS
+								p Registrated members
 						.row(style="padding-bottom:150px;")
-							.col-xs-12.col-md-7
-								#photo_chairs
-							.col-xs-12.col-md-5
-								// Small corousel
-								.carousel.slide#mycarousel2(data-ride="carousel")
-									ol.carousel-indicators#indicators_castom
-										li.active(data-target="#mycarousel2", data-slide-to="0")
-										li.active(data-target="#mycarousel2", data-slide-to="1")
-										li.active(data-target="#mycarousel2", data-slide-to="2")
-									.carousel-inner(role="listbox")
-										.item.active
-											.carousel-body
-												h1.carousel_header PRESIDENTIAL SUITE
-												p.carousel_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-												p.carousel_text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-												p
-													a.btn#bookButton(type="button", style="margin-top:20px;")
-														| READ MORE
-										.item
-											.carousel-body
-												h1.carousel_header WEDDING ROOM
-												p.carousel_text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-												p
-													a.btn#bookButton(type="button", style="margin-top:20px;")
-														| READ MORE
-										.item
-											.carousel-body
-												h1.carousel_header CONFERENCE ROOM
-												p.carousel_text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-												p.carousel_text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-												p
-													a.btn#bookButton(type="button", style="margin-top:20px;")
-														| READ MORE
-						.row(style="padding-bottom: 150px;;")
-							.map_frame#map
 block script
-	script(type="text/javascript", src='/js/carousel.js')
 	script(type="text/javascript", src='/js/count_up.js')
-	script(type="text/javascript", src='/js/map.js')
